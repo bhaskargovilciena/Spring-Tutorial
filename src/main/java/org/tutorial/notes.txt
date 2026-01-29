@@ -1,0 +1,20 @@
+to create a bean in spring, we need to define the ApplicationContext object.
+this object is created by using ClassPathXMLApplicationContext.
+we use the context and call the .getBean() on that context.
+but still the object won't be created.
+
+we also need to specify in a separate XML file about this file creation. the name of the file can
+be anything and that file is created in the resources directory which is present by default inside the main package.
+in that file we define <beans> and in that we define every bean with a unique id and a class.
+class is basically the exact package name of the class whose object has to be created like com.tutorial.Developer.
+
+we also need to get the config for the beans tag. this can be found by googling "spring xml beans config". from that,
+copy paste the XML code in XML file and the beans will be created.
+
+
+BEANS
+one thing to note about beans is that beans are created by default. the number of beans mentioned in the beans tag
+will be created in the IOC container. beans are basically the object created in the IOC container that can be used
+anywhere in the project. kind of like global object
+
+CONSTRUCTOR and SETTER INJECTION
